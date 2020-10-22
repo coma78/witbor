@@ -4,7 +4,25 @@ info:
   version: '1.0'
 servers:
   - url: 'http://localhost:3000'
-paths: {}
+paths:
+  /time:
+    get:
+      summary: time
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples: {}
+      operationId: get-time
 components:
   schemas: {}
   securitySchemes:
